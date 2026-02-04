@@ -1,0 +1,26 @@
+[
+  {
+    "host": "127.0.0.1",
+    "status": "up",
+    "protocol": "tcp",
+    "port": 3389,
+    "state": "open",
+    "name": "ms-wbt-server",
+    "product": "",
+    "version": "",
+    "extrainfo": "",
+    "script_output": "{\"rdp-vuln-ms12-020\": \"safe\"}"
+  },
+  {
+    "host": "127.0.0.1",
+    "status": "up",
+    "protocol": "tcp",
+    "port": 445,
+    "state": "open",
+    "name": "microsoft-ds",
+    "product": "Samba",
+    "version": "4.0",
+    "extrainfo": "",
+    "script_output": "{}"
+  }
+]
