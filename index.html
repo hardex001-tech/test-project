@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#12231f" />
+    <title>Namaa — Business clarity for Dubai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">
+          <div class="brand-mark">N</div>
+          <div>
+            <strong>namaa</strong>
+            <span>business workspace</span>
+          </div>
+        </div>
+
+        <div class="workspace-switcher">
+          <div class="workspace-avatar">AR</div>
+          <div class="workspace-copy">
+            <strong>Al Reef Studio</strong>
+            <span>Dubai · AED</span>
+          </div>
+          <span class="chevron">⌄</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <p class="nav-label">Workspace</p>
+          <button class="nav-item active" data-view="overview"><span class="nav-icon">⌂</span>Overview</button>
+          <button class="nav-item" data-view="invoices"><span class="nav-icon">▤</span>Invoices <span class="nav-count">8</span></button>
+          <button class="nav-item" data-view="customers"><span class="nav-icon">♙</span>Customers</button>
+          <button class="nav-item" data-view="expenses"><span class="nav-icon">↗</span>Expenses</button>
+          <p class="nav-label nav-label-spaced">Manage</p>
+          <button class="nav-item" data-view="reports"><span class="nav-icon">◒</span>Reports</button>
+          <button class="nav-item" data-view="settings"><span class="nav-icon">⚙</span>Settings</button>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="vat-card">
+            <div class="vat-card-top"><span class="status-dot"></span><span>VAT ready</span><strong>82%</strong></div>
+            <div class="progress-track"><div class="progress-value"></div></div>
+            <p>Complete your profile to stay compliant.</p>
+            <button class="text-button" data-view-target="settings">Review setup <span>→</span></button>
+          </div>
+          <div class="profile">
+            <div class="profile-avatar">MA</div>
+            <div><strong>Maya Alami</strong><span>Owner & admin</span></div>
+            <span class="more">•••</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <button class="mobile-menu" id="menuToggle" aria-label="Open menu">☰</button>
+          <div class="breadcrumbs"><span>Al Reef Studio</span><b>/</b><strong id="pageCrumb">Overview</strong></div>
+          <div class="top-actions">
+            <button class="icon-button notification-button" aria-label="Notifications">♢<span></span></button>
+            <div class="top-profile"><div class="profile-avatar small">MA</div><span>Maya</span><b>⌄</b></div>
+          </div>
+        </header>
+
+        <div class="page" id="app">
+          <section class="view active" data-page="overview">
+            <div class="page-heading">
+              <div><p class="eyebrow">Tuesday, 12 March 2024</p><h1>Good morning, Maya <span>✦</span></h1><p class="heading-copy">Here’s what’s happening with your business today.</p></div>
+              <button class="primary-button" id="createInvoice"><span>＋</span> Create invoice</button>
+            </div>
+
+            <div class="metric-grid">
+              <article class="metric-card featured">
+                <div class="metric-top"><span>Total revenue</span><span class="metric-menu">•••</span></div>
+                <strong>AED 84,250<span class="decimal">.00</span></strong>
+                <div class="metric-meta positive"><span>↗ 12.8%</span><em>vs last month</em></div>
+                <div class="sparkline revenue-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </article>
+              <article class="metric-card">
+                <div class="metric-top"><span>Outstanding</span><span class="metric-menu">•••</span></div>
+                <strong>AED 18,420<span class="decimal">.00</span></strong>
+                <div class="metric-meta warning"><span>4 invoices</span><em>need attention</em></div>
+                <div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </article>
+              <article class="metric-card">
+                <div class="metric-top"><span>Business expenses</span><span class="metric-menu">•••</span></div>
+                <strong>AED 29,680<span class="decimal">.00</span></strong>
+                <div class="metric-meta negative"><span>↘ 4.2%</span><em>vs last month</em></div>
+                <div class="expense-line"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+              </article>
+            </div>
+
+            <div class="dashboard-grid">
+              <article class="panel revenue-panel">
+                <div class="panel-heading"><div><h2>Revenue overview</h2><p>Income performance over the last 6 months</p></div><button class="select-button">Last 6 months <span>⌄</span></button></div>
+                <div class="chart-legend"><span><i class="legend-dot dark"></i>Revenue</span><span><i class="legend-dot light"></i>Expenses</span></div>
+                <div class="chart"><div class="y-axis"><span>30k</span><span>20k</span><span>10k</span><span>0</span></div><div class="chart-area"><div class="grid-lines"><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 620 180" preserveAspectRatio="none" aria-label="Revenue chart"><defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#b9d8bf" stop-opacity=".55"/><stop offset="100%" stop-color="#b9d8bf" stop-opacity=".03"/></linearGradient></defs><path class="area" d="M0,132 C40,122 65,126 93,115 S145,90 184,108 S238,90 270,92 S330,70 360,81 S414,68 450,61 S500,50 530,57 S585,32 620,42 L620,180 L0,180 Z"></path><path class="line" d="M0,132 C40,122 65,126 93,115 S145,90 184,108 S238,90 270,92 S330,70 360,81 S414,68 450,61 S500,50 530,57 S585,32 620,42"></path><circle cx="530" cy="57" r="5"></circle></svg><div class="x-axis"><span>Oct</span><span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span><span>Mar</span></div></div></div>
+              </article>
+              <article class="panel activity-panel">
+                <div class="panel-heading"><div><h2>Recent activity</h2><p>Latest updates across your workspace</p></div><button class="more-button">•••</button></div>
+                <div class="activity-list">
+                  <div class="activity-item"><div class="activity-icon green">↗</div><div><strong>Payment received</strong><span>INV-1048 · Studio Bloom</span></div><b>+ AED 8,400</b><time>2h</time></div>
+                  <div class="activity-item"><div class="activity-icon sand">▤</div><div><strong>Invoice sent</strong><span>INV-1052 · Noura Design</span></div><b>AED 12,600</b><time>5h</time></div>
+                  <div class="activity-item"><div class="activity-icon purple">↙</div><div><strong>New expense added</strong><span>Office supplies</span></div><b>- AED 320</b><time>Yesterday</time></div>
+                  <div class="activity-item"><div class="activity-icon blue">♙</div><div><strong>New customer added</strong><span>Vista Interiors</span></div><b>—</b><time>Yesterday</time></div>
+                </div>
+                <button class="full-link" data-view-target="invoices">View all activity <span>→</span></button>
+              </article>
+            </div>
+
+            <div class="bottom-grid">
+              <article class="panel invoice-panel">
+                <div class="panel-heading"><div><h2>Invoices</h2><p>Keep track of your incoming payments</p></div><button class="link-button" data-view-target="invoices">View all <span>→</span></button></div>
+                <div class="table-wrap"><table><thead><tr><th>CLIENT</th><th>AMOUNT</th><th>STATUS</th><th>DUE DATE</th><th></th></tr></thead><tbody><tr><td><div class="client-cell"><span class="client-avatar orange">SB</span><div><strong>Studio Bloom</strong><small>INV-1048</small></div></div></td><td>AED 8,400</td><td><span class="pill paid">Paid</span></td><td>12 Mar 2024</td><td>•••</td></tr><tr><td><div class="client-cell"><span class="client-avatar lilac">ND</span><div><strong>Noura Design</strong><small>INV-1052</small></div></div></td><td>AED 12,600</td><td><span class="pill pending">Pending</span></td><td>15 Mar 2024</td><td>•••</td></tr><tr><td><div class="client-cell"><span class="client-avatar blue">VI</span><div><strong>Vista Interiors</strong><small>INV-1053</small></div></div></td><td>AED 4,820</td><td><span class="pill overdue">Overdue</span></td><td>08 Mar 2024</td><td>•••</td></tr></tbody></table></div>
+              </article>
+              <article class="panel setup-panel"><div class="panel-heading"><div><h2>Finish your setup</h2><p>Get the most out of Namaa</p></div><span class="setup-progress">4/5</span></div><div class="setup-progress-track"><span></span></div><div class="setup-task done"><span>✓</span><div><strong>Business details</strong><small>Your profile is complete</small></div></div><div class="setup-task done"><span>✓</span><div><strong>Connect your bank</strong><small>Securely connected</small></div></div><div class="setup-task current"><span>3</span><div><strong>VAT registration</strong><small>Add your TRN to unlock VAT invoices</small></div><button class="arrow">→</button></div></article>
+            </div>
+          </section>
+
+          <section class="view" data-page="invoices"><div class="page-heading compact"><div><p class="eyebrow">Cash flow</p><h1>Invoices</h1><p class="heading-copy">Create, send, and track every payment in one place.</p></div><button class="primary-button" id="createInvoiceAlt"><span>＋</span> Create invoice</button></div><div class="toolbar"><div class="search-box">⌕ <input id="invoiceSearch" placeholder="Search invoices or clients" /></div><div class="filter-group"><button class="filter active" data-filter="all">All <b>8</b></button><button class="filter" data-filter="paid">Paid <b>4</b></button><button class="filter" data-filter="pending">Pending <b>3</b></button><button class="filter" data-filter="overdue">Overdue <b>1</b></button></div></div><div class="panel full-table"><table id="invoiceTable"><thead><tr><th>INVOICE</th><th>CLIENT</th><th>AMOUNT</th><th>STATUS</th><th>ISSUED</th><th>DUE DATE</th><th></th></tr></thead><tbody><tr data-status="paid"><td><strong>INV-1048</strong></td><td>Studio Bloom</td><td>AED 8,400</td><td><span class="pill paid">Paid</span></td><td>28 Feb 2024</td><td>12 Mar 2024</td><td>•••</td></tr><tr data-status="pending"><td><strong>INV-1052</strong></td><td>Noura Design</td><td>AED 12,600</td><td><span class="pill pending">Pending</span></td><td>01 Mar 2024</td><td>15 Mar 2024</td><td>•••</td></tr><tr data-status="overdue"><td><strong>INV-1053</strong></td><td>Vista Interiors</td><td>AED 4,820</td><td><span class="pill overdue">Overdue</span></td><td>22 Feb 2024</td><td>08 Mar 2024</td><td>•••</td></tr><tr data-status="paid"><td><strong>INV-1047</strong></td><td>Casa Verde Café</td><td>AED 6,200</td><td><span class="pill paid">Paid</span></td><td>20 Feb 2024</td><td>05 Mar 2024</td><td>•••</td></tr></tbody></table></div></section>
+
+          <section class="view" data-page="customers"><div class="page-heading compact"><div><p class="eyebrow">Relationships</p><h1>Customers</h1><p class="heading-copy">Your client relationships, organized for growth.</p></div><button class="primary-button"><span>＋</span> Add customer</button></div><div class="toolbar"><div class="search-box">⌕ <input id="customerSearch" placeholder="Search customers" /></div><span class="result-count">12 customers</span></div><div class="customer-grid" id="customerGrid"><article class="customer-card"><div class="customer-card-top"><span class="client-avatar orange">SB</span><span class="pill active-pill">Active</span></div><h3>Studio Bloom</h3><p>hello@studiobloom.ae</p><div><span>Revenue</span><strong>AED 24,800</strong></div></article><article class="customer-card"><div class="customer-card-top"><span class="client-avatar lilac">ND</span><span class="pill active-pill">Active</span></div><h3>Noura Design</h3><p>accounts@nouradesign.ae</p><div><span>Revenue</span><strong>AED 18,200</strong></div></article><article class="customer-card"><div class="customer-card-top"><span class="client-avatar blue">VI</span><span class="pill active-pill">Active</span></div><h3>Vista Interiors</h3><p>finance@vistainteriors.ae</p><div><span>Revenue</span><strong>AED 12,440</strong></div></article><article class="customer-card"><div class="customer-card-top"><span class="client-avatar green">CV</span><span class="pill active-pill">Active</span></div><h3>Casa Verde Café</h3><p>owner@casaverde.ae</p><div><span>Revenue</span><strong>AED 9,600</strong></div></article></div></section>
+
+          <section class="view" data-page="expenses"><div class="page-heading compact"><div><p class="eyebrow">Outgoings</p><h1>Expenses</h1><p class="heading-copy">Know where your money goes, down to the last dirham.</p></div><button class="primary-button"><span>＋</span> Add expense</button></div><div class="metric-grid expense-metrics"><article class="metric-card"><div class="metric-top"><span>This month</span></div><strong>AED 9,420<span class="decimal">.00</span></strong><div class="metric-meta negative"><span>↘ 4.2%</span><em>vs last month</em></div></article><article class="metric-card"><div class="metric-top"><span>Largest category</span></div><strong>Operations</strong><div class="metric-meta"><span>AED 3,840</span><em>41% of total</em></div></article><article class="metric-card"><div class="metric-top"><span>VAT recoverable</span></div><strong>AED 1,124<span class="decimal">.00</span></strong><div class="metric-meta positive"><span>12 receipts</span><em>ready to claim</em></div></article></div><div class="panel full-table"><div class="panel-heading"><div><h2>Recent expenses</h2><p>March 2024</p></div><button class="select-button">All categories <span>⌄</span></button></div><table><thead><tr><th>MERCHANT</th><th>CATEGORY</th><th>AMOUNT</th><th>VAT</th><th>DATE</th></tr></thead><tbody><tr><td><strong>WeWork One Central</strong></td><td>Operations</td><td>AED 2,100</td><td>AED 100</td><td>11 Mar 2024</td></tr><tr><td><strong>Emirates Post</strong></td><td>Shipping</td><td>AED 320</td><td>AED 15</td><td>09 Mar 2024</td></tr><tr><td><strong>Adobe Creative Cloud</strong></td><td>Software</td><td>AED 280</td><td>AED 13</td><td>05 Mar 2024</td></tr></tbody></table></div></section>
+
+          <section class="view" data-page="reports"><div class="page-heading compact"><div><p class="eyebrow">Insights</p><h1>Reports</h1><p class="heading-copy">A clearer view of your business performance.</p></div><button class="secondary-button">Export report <span>↓</span></button></div><div class="report-highlight"><div><p class="eyebrow">March snapshot</p><h2>Business is moving in the right direction.</h2><p>Revenue is up 12.8% while expenses are down 4.2% compared to February.</p></div><div class="highlight-number">+12.8%<small>revenue growth</small></div></div><div class="report-grid"><article class="panel report-card"><h2>Profit & loss</h2><p>March 2024</p><div class="report-total">AED 54,570 <span>net profit</span></div><div class="profit-bar"><span></span></div><div class="report-row"><span>Revenue</span><b>AED 84,250</b></div><div class="report-row"><span>Expenses</span><b>AED 29,680</b></div></article><article class="panel report-card"><h2>VAT summary</h2><p>Q1 2024</p><div class="report-total">AED 6,482 <span>net VAT payable</span></div><div class="report-row"><span>Output VAT</span><b>AED 7,606</b></div><div class="report-row"><span>Input VAT</span><b>- AED 1,124</b></div><button class="full-link">View VAT report <span>→</span></button></article></div></section>
+
+          <section class="view" data-page="settings"><div class="page-heading compact"><div><p class="eyebrow">Workspace</p><h1>Settings</h1><p class="heading-copy">Keep your business details and VAT profile up to date.</p></div><button class="primary-button" id="saveSettings">Save changes</button></div><div class="settings-layout"><div class="settings-menu"><button class="active">Business profile</button><button>VAT & tax</button><button>Team & permissions</button><button>Notifications</button></div><div class="panel settings-form"><div class="form-heading"><h2>Business profile</h2><p>This information appears on your invoices and reports.</p></div><div class="form-grid"><label>Business name<input value="Al Reef Studio" /></label><label>Trade licence number<input value="CN-2849103" /></label><label>Business email<input value="hello@alreef.studio" /></label><label>Phone number<input value="+971 50 384 1290" /></label><label class="wide">Address<input value="Dubai Design District, Building 4, Dubai, UAE" /></label></div><div class="vat-section"><div><h2>VAT registration</h2><p>UAE VAT is applied at the standard rate of 5%.</p></div><div class="vat-status"><span class="status-dot"></span>Registration in progress</div><label>Tax Registration Number (TRN)<input placeholder="Enter your 15-digit TRN" /><small>Your TRN will appear on all VAT invoices.</small></label></div></div></div></section>
+        </div>
+      </main>
+    </div>
+    <div class="toast" id="toast">Invoice draft created <span>✓</span></div>
+    <script src="app.js"></script>
+  </body>
+</html>
